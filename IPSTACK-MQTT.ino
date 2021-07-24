@@ -15,21 +15,21 @@ const char* password = "*********";//put your wifi password here
 //*********** MQTT CONFIG **************
 //**************************************
 
-const char *mqtt_server = "**************";// You're MQTT SERVER
+const char *mqtt_server = "**************";// your MQTT SERVER
 int mqtt_port = 1883;
-const char *mqtt_user = "**************"; //You're MQTT USER
-const char *mqtt_pass = "**************"; //You're MQTT PASSWORD
-const char *root_topic_subscribe = "**************"; //You're MQTT TOPIC
-const char *root_topic_publish = "**************"; //You're MQTT TOPIC
+const char *mqtt_user = "**************"; //your MQTT USER
+const char *mqtt_pass = "**************"; //your MQTT PASSWORD
+const char *root_topic_subscribe = "**************"; //your MQTT TOPIC
+const char *root_topic_publish = "**************"; //your MQTT TOPIC
 
 //**************************************
 //*********** MQTT CONFIG2 *************
 //**************************************
 
-const char *mqtt_user1 = "**************"; //You're MQTT USER 2
-const char *mqtt_pass1 = "**************"; //You're MQTT PASSWORD 2
-const char *root_topic_subscribe1 = "**************"; //You're MQTT TOPIC
-const char *root_topic_publish1 = "**************"; //You're MQTT TOPIC
+const char *mqtt_user1 = "**************"; //your MQTT USER 2
+const char *mqtt_pass1 = "**************"; //your MQTT PASSWORD 2
+const char *root_topic_subscribe1 = "**************"; //your MQTT TOPIC
+const char *root_topic_publish1 = "**************"; //your MQTT TOPIC
 //**************************************
 
 UltraSonicDistanceSensor distanceSensor(19, 18);
@@ -193,7 +193,7 @@ void ipFind()
 {
 
   HTTPClient http;
-  http.begin("*********************"); // You're IPSTACK URL
+  http.begin("*********************"); // your IPSTACK URL
   Serial.print("[HTTPS] GET...\n");  
   int httpCode = http.GET();
   if (httpCode > 0) { //Check for the returning code
@@ -211,9 +211,9 @@ if (error) {
   return;
 }
 
-country_name = doc["country_name"]; // "Argentina"
-latitude = doc["latitude"]; // -34.611778259277344
-longitude = doc["longitude"]; // -58.41730880737305
+country_name = doc["country_name"]; 
+latitude = doc["latitude"]; 
+longitude = doc["longitude"]; 
 
 Serial.println(country_name);
 Serial.println(latitude,7);
