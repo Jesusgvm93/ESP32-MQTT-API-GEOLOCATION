@@ -8,8 +8,8 @@
 //**************************************
 //*********** WIFICONFIG ***************
 //**************************************
-const char* ssid = "Fibertel WiFi996 2.4GHz";//put your wifi network name here
-const char* password = "007138211154";//put your wifi password here
+const char* ssid = "***************";//put your wifi network name here
+const char* password = "*********";//put your wifi password here
 
 //**************************************
 //*********** MQTT CONFIG **************
